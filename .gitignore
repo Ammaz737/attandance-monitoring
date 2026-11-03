@@ -1,0 +1,31 @@
+# Local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Frontend
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Runtime data and model artifacts
+backend/storage/**
+!backend/storage/**/
+!backend/storage/**/.gitkeep
+backend/model_assets/**
+!backend/model_assets/.gitkeep
+*.log
+.DS_Store
+Thumbs.db
